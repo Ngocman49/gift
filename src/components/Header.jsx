@@ -1,5 +1,4 @@
 import React ,{ useRef, useEffect } from 'react'
-import logo from '../assets/image/logo.png';
 import {Link , useLocation} from 'react-router-dom';
 
 
@@ -25,8 +24,9 @@ const mainNav = [
 const Header = () => {
 
 
-    //const { pathname } = useLocation()
-    //const activeNav = mainNav.findIndex(e => e.path === pathname)
+    const { pathname } = useLocation()
+    // eslint-disable-next-line
+    const activeNav = mainNav.findIndex(e => e.path === pathname)
     const headerRef = useRef(null);
 
     useEffect(() => {
@@ -50,7 +50,7 @@ const Header = () => {
             <div className="container">
                 <div className="header__logo">
                     <Link to='/'>
-                        <img src={logo} alt=''/>
+                        <h1>Contho.congo</h1>
                     </Link>
                 </div>
                 <div className="header__menu">

@@ -23,6 +23,7 @@
   &.shrink {
     height: $header-shrink-height; // On top menu
     box-shadow: $box-shadow;
+    z-index: 100;
   }
 
   &__logo {
@@ -31,8 +32,11 @@
     inset: 0;
     cursor: pointer;
     pointer-events: none;
-    img {
-      height: 28px;
+    h1 {
+      height: 27px;
+      font-size: 35px;
+      font-family: "Allison", cursive;
+      top: 50px;
     }
   }
   &__menu {
