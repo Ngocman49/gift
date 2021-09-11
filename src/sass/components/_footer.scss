@@ -1,0 +1,22 @@
+.footer {
+  padding: 70px 0;
+  box-shadow: $box-shadow;
+  font-size: 1.1rem;
+  position: absolute;
+  width: 100%;
+  .container {
+    @include flex(center, center);
+  }
+
+  &__about {
+    P {
+      margin-bottom: 2rem;
+    }
+  }
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    margin-left: 1.2rem;
+  }
+}

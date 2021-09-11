@@ -1,11 +1,12 @@
 import React from 'react'
+import Helmet from '../components/Helmet'
 
 const Home = () => {
     return (
-        <div>
+        <Helmet title = "Trang chu">
             Home
 Home
-        </div>
+        </Helmet>
     )
 }
 

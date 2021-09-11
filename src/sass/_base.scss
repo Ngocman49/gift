@@ -23,6 +23,9 @@ a {
   text-decoration: none;
   color: unset;
 }
+a:hover {
+  color: $main-color;
+}
 
 @each $color, $val in $colors {
   .color-#{$color} {
@@ -74,4 +77,8 @@ a {
   @include tablet {
     margin-top: calc(#{$header-mobile-height} + 10px);
   }
+}
+
+.grid {
+  display: grid;
 }
